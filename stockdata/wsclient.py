@@ -22,6 +22,7 @@ async def client():
                     time = time.replace(second=0)
                     stock, _ = Stock.objects.get_or_create(stock_name=str(ping['data']['s']))
                     stock.trade_set.create(time=time, price=float(ping['data']['p']), volume=int(ping['data']['v']))
+                    print("TRADE RECORDED")
 
         except websockets.ConnectionClosed:
             print("Connection lost! Retrying..")

@@ -12,6 +12,7 @@ websockets = "*"
 asyncio = "*"
 djangorestframework = "*"
 pytz = "*"
+django-redis = "*"
 
 [requires]
 python_version = "3.7"
