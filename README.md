@@ -1,6 +1,7 @@
 # baraka-back-end-assessment
 application that returns the candles/bars for particular stocks
 
+Results are cached for 5 minutes
 
 # API 
 @PK: symbol (stock symbol ex: APPL, TSLA)
